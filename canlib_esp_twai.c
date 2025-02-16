@@ -1,6 +1,6 @@
 #include "canlib_esp_twai.h"
 
-#ifdef CONFIG_IDF_TARGET_ESP32
+#if defined(ESP_PLATFORM)
 
 bool can_hal_TWAI_send(void* interface, void* base_interface, const canFrame_t* frame) {
     //  Get interface

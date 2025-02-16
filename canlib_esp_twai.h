@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef CONFIG_IDF_TARGET_ESP32
+#if defined(ESP_PLATFORM)
 
 #include "canlib.h"
 #include <driver/gpio.h>
